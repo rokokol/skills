@@ -19,6 +19,8 @@ One marketplace rather than one per skill, because a marketplace is addressed by
 
 Every skill here is also a plain directory with a `SKILL.md`, which is an open format more than one agent reads. Each repository's readme carries the other ways in: `npx skills add`, or a clone straight into whichever skills directory your agent reads
 
+An entry's `name` is an identifier and its `description` is not. The name is checked against the frontmatter of the skill it points at, because `/plugin install <name>@rokokol-skills` addresses the plugin by it and a rename breaks the install silently. The description is written for someone reading a list of plugins and deliberately differs from the skill's own: a skill's description is matched by meaning against what a user says, which makes it long and full of triggers, and most of them open on "What it is". Reading one against the other and closing the gap is a change for the worse
+
 ## What is listed
 
 | Plugin | What it is |

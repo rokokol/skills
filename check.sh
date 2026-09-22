@@ -151,6 +151,31 @@ check_remote() {
   done < <(jq -r '.plugins[].source.repo' "$manifest")
   ((missing == 0)) ||
     fail "$missing repositor(y|ies) the manifest names are private or gone — an entry a stranger cannot clone refuses at install"
+
+  echo "== each entry is named as the skill names itself"
+  # /plugin install addresses the plugin by the entry's name, and the skill answers to the
+  # name in its own frontmatter. A skill renamed in its own repository leaves this file
+  # pointing at a name nothing answers to, and the install refuses without saying why
+  command -v curl >/dev/null || die "curl is missing, and the frontmatter is read over https"
+  local wrong=0 entry repo want got
+  while IFS=$'\t' read -r entry repo; do
+    # The frontmatter only: a name: line in the body is prose, and the first block is what
+    # an agent reads the skill's own name from. The reader takes the first match and then
+    # keeps reading — an awk that exits early leaves curl writing into a closed pipe, and
+    # under pipefail that SIGPIPE becomes the status of a pipeline that did its job
+    got=$(curl -sfL --max-time 20 "https://raw.githubusercontent.com/$repo/HEAD/SKILL.md" |
+      awk '/^---[ \t]*$/ { f++; next }
+           f == 1 && /^name:/ && !seen { sub(/^name:[ \t]*/, ""); gsub(/^"|"$/, ""); print; seen = 1 }') || got=""
+    want="$entry"
+    if [[ "$got" == "$want" ]]; then
+      echo "   ok   $entry"
+    else
+      echo "   $repo calls its skill '${got:-nothing readable}', this file calls it '$want'" >&2
+      wrong=$((wrong + 1))
+    fi
+  done < <(jq -r '.plugins[] | "\(.name)\t\(.source.repo)"' "$manifest")
+  ((wrong == 0)) ||
+    fail "$wrong entr(y|ies) name a skill by a name it does not answer to"
 }
 
 case "$mode" in
