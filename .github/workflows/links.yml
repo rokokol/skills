@@ -1,0 +1,22 @@
+name: links
+
+# A detector, not a gate: it asks GitHub whether a stranger can still clone every
+# repository the manifest names. A repository going private is not a change to this one,
+# so this never runs on a pull request, where it would turn someone else's red into this
+# repository's
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  remote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - name: check.sh remote (every listed repository is public)
+        run: ./check.sh remote

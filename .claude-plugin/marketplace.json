@@ -1,0 +1,163 @@
+{
+  "name": "rokokol-skills",
+  "description": "Agent skills for writing, checking and shipping software, each in its own repository",
+  "owner": {
+    "name": "rokokol",
+    "url": "https://github.com/rokokol"
+  },
+  "plugins": [
+    {
+      "name": "3x-ui-admin",
+      "source": { "source": "github", "repo": "rokokol/3x-ui-admin-skill" },
+      "description": "Administer a 3x-ui panel over its HTTP API — inbounds, clients, hosts, master and node links, routing, Xray and panel settings, and subscriptions",
+      "homepage": "https://github.com/rokokol/3x-ui-admin-skill",
+      "license": "MIT",
+      "category": "devops",
+      "keywords": ["3x-ui", "xray", "vpn", "panel"]
+    },
+    {
+      "name": "ai-commit-trailers",
+      "source": { "source": "github", "repo": "rokokol/ai-commit-trailers-skill" },
+      "description": "Which AI-disclosure trailer a commit carries — Generated-by, Assisted-by (mostly or partly), or none — and why never Co-authored-by or Signed-off-by for an agent",
+      "homepage": "https://github.com/rokokol/ai-commit-trailers-skill",
+      "license": "MIT",
+      "category": "workflow",
+      "keywords": ["git", "commit", "ai-disclosure", "trailers"]
+    },
+    {
+      "name": "bash-best-practices",
+      "source": { "source": "github", "repo": "rokokol/bash-best-practices-skill" },
+      "description": "A standard for sh and bash utilities: one script shape, help as the single source of truth, portability to the bash 3.2 macOS ships, and a checker that holds the help to the code",
+      "homepage": "https://github.com/rokokol/bash-best-practices-skill",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["bash", "shell", "posix", "shellcheck", "cli"]
+    },
+    {
+      "name": "ci",
+      "source": { "source": "github", "repo": "rokokol/ci-skill" },
+      "description": "CI that stays green for the right reasons: GitHub Actions conventions, pinned toolchains instead of registry lookups, and weekly cascades that land dependency bumps only on green",
+      "homepage": "https://github.com/rokokol/ci-skill",
+      "license": "MIT",
+      "category": "devops",
+      "keywords": ["ci", "github-actions", "workflows", "pinning"]
+    },
+    {
+      "name": "close-session",
+      "source": { "source": "github", "repo": "rokokol/close-session-skill" },
+      "description": "Close a working session: save what it taught where the next session will read it, retire what went stale, and leave nothing hanging",
+      "homepage": "https://github.com/rokokol/close-session-skill",
+      "license": "MIT",
+      "category": "workflow",
+      "keywords": ["session", "memory", "handover"]
+    },
+    {
+      "name": "code-comments",
+      "source": { "source": "github", "repo": "rokokol/code-comments-skill" },
+      "description": "What a comment in code says and what it must not: the reader it is written for, the register, the moment it must not be anchored to, and a checker that reads comments out of the syntax tree",
+      "homepage": "https://github.com/rokokol/code-comments-skill",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["comments", "code-review", "tree-sitter", "style"]
+    },
+    {
+      "name": "companion",
+      "source": { "source": "github", "repo": "rokokol/companion-skill" },
+      "description": "A template for an assistant persona and the two dossiers behind it, kept out of the always-loaded instructions and rewritten for whoever adopts it",
+      "homepage": "https://github.com/rokokol/companion-skill",
+      "license": "MIT",
+      "category": "workflow",
+      "keywords": ["persona", "template", "assistant"]
+    },
+    {
+      "name": "contributing",
+      "source": { "source": "github", "repo": "rokokol/contributing-skill" },
+      "description": "Everything published under your GitHub identity, and the homework before it: pushes, issues, pull requests, reviews and comments, each shown and approved one at a time",
+      "homepage": "https://github.com/rokokol/contributing-skill",
+      "license": "MIT",
+      "category": "workflow",
+      "keywords": ["github", "pull-requests", "issues", "open-source"]
+    },
+    {
+      "name": "create-readme",
+      "source": { "source": "github", "repo": "rokokol/create-readme-skill" },
+      "description": "The house rules for a README: structure and tone, one paragraph per line with no hard wrapping, no trailing full stop, and no section that has its own file",
+      "homepage": "https://github.com/rokokol/create-readme-skill",
+      "license": "MIT",
+      "category": "documentation",
+      "keywords": ["readme", "markdown", "documentation"]
+    },
+    {
+      "name": "huix-standard",
+      "source": { "source": "github", "repo": "rokokol/huix-standard-skill" },
+      "description": "Making Nix-flake-first Linux repositories installable on any distribution without Nix: a canonical install.sh, uninstall by manifest, and a dependency preflight that never installs",
+      "homepage": "https://github.com/rokokol/huix-standard-skill",
+      "license": "MIT",
+      "category": "devops",
+      "keywords": ["nix", "flake", "install", "linux", "packaging"]
+    },
+    {
+      "name": "maintainer-docs",
+      "source": { "source": "github", "repo": "rokokol/maintainer-docs-skill" },
+      "description": "Repository-wide maintainer rationale in WORKAROUNDS.md, DEVIATIONS.md and PITFALLS.md: which file owns a non-obvious fact, and when the explanation belongs beside the code instead",
+      "homepage": "https://github.com/rokokol/maintainer-docs-skill",
+      "license": "MIT",
+      "category": "documentation",
+      "keywords": ["documentation", "workarounds", "deviations", "pitfalls"]
+    },
+    {
+      "name": "obsidian-cli",
+      "source": { "source": "github", "repo": "rokokol/obsidian-cli-skill" },
+      "description": "Drive a running Obsidian vault from the terminal through the official Obsidian CLI — read and write notes, find one by name, alias, tag or property, and query the link graph",
+      "homepage": "https://github.com/rokokol/obsidian-cli-skill",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["obsidian", "notes", "vault", "cli"]
+    },
+    {
+      "name": "papers",
+      "source": { "source": "github", "repo": "rokokol/papers-skill" },
+      "description": "Find, read and compare scientific papers without spending the conversation's context on them: a shortlist for a topic, a bounded digest of one paper, and a comparison of several",
+      "homepage": "https://github.com/rokokol/papers-skill",
+      "license": "MIT",
+      "category": "research",
+      "keywords": ["papers", "research", "arxiv", "literature"]
+    },
+    {
+      "name": "skill-authoring",
+      "source": { "source": "github", "repo": "rokokol/skill-authoring-skill" },
+      "description": "The house rules for text an agent loads whole into a conversation, and check-skill.sh, the gate that proves a skill loadable, its references reachable and its links resolvable",
+      "homepage": "https://github.com/rokokol/skill-authoring-skill",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["skills", "agent", "authoring", "prompt"]
+    },
+    {
+      "name": "super-productivity",
+      "source": { "source": "github", "repo": "rokokol/super-productivity-skill" },
+      "description": "Manage Super Productivity tasks through its Local REST API — list, create, edit, schedule, complete and delete them, run the timer, and report tracked time",
+      "homepage": "https://github.com/rokokol/super-productivity-skill",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["tasks", "todo", "time-tracking", "super-productivity"]
+    },
+    {
+      "name": "tests",
+      "source": { "source": "github", "repo": "rokokol/tests-skill" },
+      "description": "Tests that mean something when they are green: a verdict no pipe can swallow, logs read even at exit 0, and every check watched failing before it is trusted",
+      "homepage": "https://github.com/rokokol/tests-skill",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["testing", "tdd", "falsification", "ci"]
+    },
+    {
+      "name": "versioning",
+      "source": { "source": "github", "repo": "rokokol/versioning-skill" },
+      "description": "What a repository says about itself over time: whether it has a version at all, where that version lives, what its changelog looks like, and the ritual that cuts a release",
+      "homepage": "https://github.com/rokokol/versioning-skill",
+      "license": "MIT",
+      "category": "workflow",
+      "keywords": ["versioning", "changelog", "semver", "releases"]
+    }
+  ]
+}

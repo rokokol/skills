@@ -1,0 +1,32 @@
+name: ci
+
+# The gate: it reads the manifest in this repository and nothing else, so a pull request
+# runs it too and a red run always means a change here
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+  # Called with a ref so automation verifies a branch by running this workflow rather than
+  # a copy of its commands
+  workflow_call:
+    inputs:
+      ref:
+        type: string
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.ref }}
+      # jq comes with the runner image; nothing here is fetched from a registry
+      - name: check.sh manifest (the gate, self-tested on planted defects)
+        run: ./check.sh manifest
