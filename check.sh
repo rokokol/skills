@@ -97,6 +97,19 @@ check_manifest() {
   count=$(jq '.plugins | length' "$manifest")
   echo "   $count plugins, each named once, each pointing at a github repository"
 
+  echo "== the readme's table lists exactly what the manifest does"
+  # Two lists of one membership: this file for /plugin, the readme's table for a person
+  # reading on GitHub. They drifted once already — a skill published, added here, and never
+  # reached the table — and nothing noticed until someone went looking for where to see it
+  readme_names() { # readme_names FILE -> the plugin names its table links to, one per line
+    grep -oE '^\| \[[a-zA-Z0-9._-]+\]\(https://github\.com/rokokol/[a-zA-Z0-9._-]+\)' "$1" |
+      sed -E 's/^\| \[([a-zA-Z0-9._-]+)\].*/\1/' | sort -u
+  }
+  manifest_names=$(jq -r '.plugins[].name' "$manifest" | sort -u)
+  diff_names() { diff <(printf '%s\n' "$manifest_names") <(readme_names "$1") || true; }
+  d=$(diff_names README.md)
+  [[ -z "$d" ]] || fail "README.md's table and $manifest name different plugins:"$'\n'"$d"
+
   echo "== each of those checks can go red"
   # A copy with one thing broken must be rejected, and for that thing's own reason. A
   # check nothing has ever caught is a decoration, and this file is the whole product
@@ -124,7 +137,14 @@ check_manifest() {
   # The faithful copy passes, or the planted ones prove nothing but that the reader works
   [[ -z "$(read_manifest "$manifest")" ]] ||
     fail "the unedited manifest was rejected — the planted copies prove nothing"
-  echo "   $planted planted defects caught, the unedited manifest accepted"
+
+  # The readme check above, proven able to fail: drop the table's first row and require it
+  # named, generically rather than against one plugin's name, so the fixture outlives it
+  sed '0,/^| \[/{/^| \[/d}' README.md >"$work/readme-missing-row.md"
+  d=$(diff_names "$work/readme-missing-row.md")
+  [[ -n "$d" ]] || fail "a table with a row removed was accepted — that check proves nothing"
+  planted=$((planted + 1))
+  echo "   $planted planted defects caught, the unedited manifest and readme accepted"
 }
 
 check_remote() {

@@ -36,6 +36,7 @@ An entry's `name` is an identifier and its `description` is not. The name is che
 | [create-readme](https://github.com/rokokol/create-readme-skill) | the house rules for a readme |
 | [huix-standard](https://github.com/rokokol/huix-standard-skill) | making Nix-flake-first repositories installable without Nix |
 | [maintainer-docs](https://github.com/rokokol/maintainer-docs-skill) | where repository-wide maintainer rationale lives |
+| [nix-best-practices](https://github.com/rokokol/nix-best-practices-skill) | a standard for Nix, with a checker that holds a tree to it |
 | [obsidian-cli](https://github.com/rokokol/obsidian-cli-skill) | drive a running Obsidian vault from the terminal |
 | [papers](https://github.com/rokokol/papers-skill) | find, read and compare scientific papers without spending the context on them |
 | [skill-authoring](https://github.com/rokokol/skill-authoring-skill) | the house rules for text an agent loads whole, and the gate that checks a skill |
