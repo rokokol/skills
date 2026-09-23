@@ -106,6 +106,15 @@
       "keywords": ["documentation", "workarounds", "deviations", "pitfalls"]
     },
     {
+      "name": "nix-best-practices",
+      "source": { "source": "github", "repo": "rokokol/nix-best-practices-skill" },
+      "description": "A standard for Nix: the scope a with opens, the shape of a module header, what a derivation's meta has to say and what a flake.lock must not hold — everything nixfmt, statix and deadnix cannot see — plus a checker that holds a tree to it",
+      "homepage": "https://github.com/rokokol/nix-best-practices-skill",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["nix", "nixos", "flake", "nixpkgs"]
+    },
+    {
       "name": "obsidian-cli",
       "source": { "source": "github", "repo": "rokokol/obsidian-cli-skill" },
       "description": "Drive a running Obsidian vault from the terminal through the official Obsidian CLI — read and write notes, find one by name, alias, tag or property, and query the link graph",
