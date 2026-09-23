@@ -2,11 +2,15 @@
 
 # rokokol-skills
 
-**One marketplace for skills that each live in their own repository ฅ^•ﻌ•^ฅ**
+**My skill for people who want a deterministic harness ฅ^•ﻌ•^ฅ**
 
 [![license](https://img.shields.io/badge/MIT-3DA639?style=flat)](LICENSE)
 
 </div>
+
+Each skill is designed with a focus on providing the agent with a specialized tool for completing tasks. The agent will no longer be forced to rewrite commands or struggle as a result. All skills include CI/CD and support for Linux and macOS where applicable
+
+## Install
 
 A Claude Code marketplace is a list, not a container: every entry here points at the repository that holds the skill, so each one keeps its own gate, its own changelog and its own issues, while you add the list once
 
@@ -14,12 +18,6 @@ A Claude Code marketplace is a list, not a container: every entry here points at
 /plugin marketplace add rokokol/skills
 /plugin install tests@rokokol-skills
 ```
-
-One marketplace rather than one per skill, because a marketplace is addressed by the name it declares and a user can register only one per name — a second repository declaring `rokokol-skills` would replace the first, silently, and the plugin installed from it would go with it
-
-Every skill here is also a plain directory with a `SKILL.md`, which is an open format more than one agent reads. Each repository's readme carries the other ways in: `npx skills add`, or a clone straight into whichever skills directory your agent reads
-
-An entry's `name` is an identifier and its `description` is not. The name is checked against the frontmatter of the skill it points at, because `/plugin install <name>@rokokol-skills` addresses the plugin by it and a rename breaks the install silently. The description is written for someone reading a list of plugins and deliberately differs from the skill's own: a skill's description is matched by meaning against what a user says, which makes it long and full of triggers, and most of them open on "What it is". Reading one against the other and closing the gap is a change for the worse
 
 ## What is listed
 
