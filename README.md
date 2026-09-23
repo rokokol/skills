@@ -39,6 +39,7 @@ A Claude Code marketplace is a list, not a container: every entry here points at
 | [papers](https://github.com/rokokol/papers-skill) | find, read and compare scientific papers without spending the context on them |
 | [skill-authoring](https://github.com/rokokol/skill-authoring-skill) | the house rules for text an agent loads whole, and the gate that checks a skill |
 | [super-productivity](https://github.com/rokokol/super-productivity-skill) | manage Super Productivity tasks through its Local REST API |
+| [telegram](https://github.com/rokokol/telegram-skill) | reach a Telegram account under per-chat permissions the agent cannot grant itself |
 | [tests](https://github.com/rokokol/tests-skill) | tests that mean something when they are green |
 | [versioning](https://github.com/rokokol/versioning-skill) | what a repository says about itself over time |
 

@@ -2,6 +2,10 @@
 
 This repository is read at whatever revision you have checked out, so its entries are dated rather than numbered
 
+## 2026-09-23
+
+- `telegram` is listed: reaching a Telegram account over MTProto through a service that holds the session and decides by per-chat permissions the agent cannot grant itself
+
 ## 2026-09-22
 
 - The marketplace exists: `rokokol-skills`, listing seventeen skills, each pointing at its own repository

@@ -151,6 +151,15 @@
       "keywords": ["tasks", "todo", "time-tracking", "super-productivity"]
     },
     {
+      "name": "telegram",
+      "source": { "source": "github", "repo": "rokokol/telegram-skill" },
+      "description": "Reach a Telegram account over MTProto through a service that holds the session and decides by per-chat permissions the agent cannot grant itself",
+      "homepage": "https://github.com/rokokol/telegram-skill",
+      "license": "MIT",
+      "category": "integration",
+      "keywords": ["telegram", "mtproto", "messaging", "permissions"]
+    },
+    {
       "name": "tests",
       "source": { "source": "github", "repo": "rokokol/tests-skill" },
       "description": "Tests that mean something when they are green: a verdict no pipe can swallow, logs read even at exit 0, and every check watched failing before it is trusted",
