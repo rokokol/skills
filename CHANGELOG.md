@@ -2,6 +2,10 @@
 
 This repository is read at whatever revision you have checked out, so its entries are dated rather than numbered
 
+## 2026-10-20
+
+- `headless-gui` is listed: running, screenshotting and clicking through a GUI app in a private headless sway, so that nothing reaches the desktop the user works in
+
 ## 2026-10-19
 
 - `phone-alert` is listed: calling a person to their Android phone through Termux, now with a vibration, the torch and a notification, or later with an alarm in the clock app

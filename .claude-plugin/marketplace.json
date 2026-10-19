@@ -88,6 +88,15 @@
       "keywords": ["readme", "markdown", "documentation"]
     },
     {
+      "name": "headless-gui",
+      "source": { "source": "github", "repo": "rokokol/headless-gui-skill" },
+      "description": "Run, see and drive a GUI app in a private headless sway, so that no window, focus change, cursor move or keystroke reaches the desktop the user works in",
+      "homepage": "https://github.com/rokokol/headless-gui-skill",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["gui", "wayland", "sway", "headless", "testing"]
+    },
+    {
       "name": "huix-standard",
       "source": { "source": "github", "repo": "rokokol/huix-standard-skill" },
       "description": "Making Nix-flake-first Linux repositories installable on any distribution without Nix: a canonical install.sh, uninstall by manifest, and a dependency preflight that never installs",
