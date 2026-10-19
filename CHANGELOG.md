@@ -2,6 +2,11 @@
 
 This repository is read at whatever revision you have checked out, so its entries are dated rather than numbered
 
+## 2026-10-19
+
+- `phone-alert` is listed: calling a person to their Android phone through Termux, now with a vibration, the torch and a notification, or later with an alarm in the clock app
+- `termux-api` is listed: using an Android phone's cameras, location, calls, messages and notifications through termux-api, with the commands that hang or exit 0 without an effect
+
 ## 2026-09-23
 
 - `telegram` is listed: reaching a Telegram account over MTProto through a service that holds the session and decides by per-chat permissions the agent cannot grant itself

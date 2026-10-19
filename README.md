@@ -37,9 +37,11 @@ A Claude Code marketplace is a list, not a container: every entry here points at
 | [nix-best-practices](https://github.com/rokokol/nix-best-practices-skill) | a standard for Nix, with a checker that holds a tree to it |
 | [obsidian-cli](https://github.com/rokokol/obsidian-cli-skill) | drive a running Obsidian vault from the terminal |
 | [papers](https://github.com/rokokol/papers-skill) | find, read and compare scientific papers without spending the context on them |
+| [phone-alert](https://github.com/rokokol/phone-alert-skill) | call a person to their Android phone now, or set an alarm for later |
 | [skill-authoring](https://github.com/rokokol/skill-authoring-skill) | the house rules for text an agent loads whole, and the gate that checks a skill |
 | [super-productivity](https://github.com/rokokol/super-productivity-skill) | manage Super Productivity tasks through its Local REST API |
 | [telegram](https://github.com/rokokol/telegram-skill) | reach a Telegram account under per-chat permissions the agent cannot grant itself |
+| [termux-api](https://github.com/rokokol/termux-api-skill) | use an Android phone through termux-api, knowing where its commands fail silently |
 | [tests](https://github.com/rokokol/tests-skill) | tests that mean something when they are green |
 | [versioning](https://github.com/rokokol/versioning-skill) | what a repository says about itself over time |
 

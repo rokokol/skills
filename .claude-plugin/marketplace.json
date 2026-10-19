@@ -133,6 +133,15 @@
       "keywords": ["papers", "research", "arxiv", "literature"]
     },
     {
+      "name": "phone-alert",
+      "source": { "source": "github", "repo": "rokokol/phone-alert-skill" },
+      "description": "Call a person to their Android phone through Termux: a long-short-long vibration, the torch and a notification with sound now, or an alarm in the clock app at a set time",
+      "homepage": "https://github.com/rokokol/phone-alert-skill",
+      "license": "MIT",
+      "category": "integration",
+      "keywords": ["android", "termux", "notification", "alarm"]
+    },
+    {
       "name": "skill-authoring",
       "source": { "source": "github", "repo": "rokokol/skill-authoring-skill" },
       "description": "The house rules for text an agent loads whole into a conversation, and check-skill.sh, the gate that proves a skill loadable, its references reachable and its links resolvable",
@@ -158,6 +167,15 @@
       "license": "MIT",
       "category": "integration",
       "keywords": ["telegram", "mtproto", "messaging", "permissions"]
+    },
+    {
+      "name": "termux-api",
+      "source": { "source": "github", "repo": "rokokol/termux-api-skill" },
+      "description": "Use an Android phone's cameras, location, calls, messages and notifications from Termux through termux-api, knowing which commands hang or exit 0 without an effect",
+      "homepage": "https://github.com/rokokol/termux-api-skill",
+      "license": "MIT",
+      "category": "integration",
+      "keywords": ["android", "termux", "termux-api", "phone"]
     },
     {
       "name": "tests",
