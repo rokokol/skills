@@ -6,7 +6,7 @@
 
 [![license](https://img.shields.io/badge/MIT-3DA639?style=flat)](LICENSE)
 
-<a href="https://github.com/rokokol/skills"><img src="https://count.owenewans.org/rokokol/skills?theme=rule34&notitle" alt="Stars, PRs, issues and commits of the skills repository" width="400"/></a>
+<a href="https://github.com/rokokol/skills"><img src="https://count.owenewans.org/rokokol/skills?theme=original-new&notitle" alt="Stars, PRs, issues and commits of the skills repository" width="400"/></a>
 
 </div>
 
