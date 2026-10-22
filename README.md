@@ -34,6 +34,7 @@ A Claude Code marketplace is a list, not a container: every entry here points at
 | [create-readme](https://github.com/rokokol/create-readme-skill) | the house rules for a readme |
 | [headless-gui](https://github.com/rokokol/headless-gui-skill) | run and click through a GUI app without touching your screen |
 | [huix-standard](https://github.com/rokokol/huix-standard-skill) | making Nix-flake-first repositories installable without Nix |
+| [mail](https://github.com/rokokol/mail-skill) | read, send and wait for mail under per-address permissions the agent cannot grant itself |
 | [maintainer-docs](https://github.com/rokokol/maintainer-docs-skill) | where repository-wide maintainer rationale lives |
 | [nix-best-practices](https://github.com/rokokol/nix-best-practices-skill) | a standard for Nix, with a checker that holds a tree to it |
 | [obsidian-cli](https://github.com/rokokol/obsidian-cli-skill) | drive a running Obsidian vault from the terminal |

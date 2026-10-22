@@ -106,6 +106,15 @@
       "keywords": ["nix", "flake", "install", "linux", "packaging"]
     },
     {
+      "name": "mail",
+      "source": { "source": "github", "repo": "rokokol/mail-skill" },
+      "description": "Reach mailboxes over IMAP and SMTP through a service that holds the passwords and decides by per-mailbox and per-address permissions the agent cannot grant itself, with new mail pushed over IDLE",
+      "homepage": "https://github.com/rokokol/mail-skill",
+      "license": "MIT",
+      "category": "integration",
+      "keywords": ["email", "imap", "smtp", "idle", "permissions"]
+    },
+    {
       "name": "maintainer-docs",
       "source": { "source": "github", "repo": "rokokol/maintainer-docs-skill" },
       "description": "Repository-wide maintainer rationale in WORKAROUNDS.md, DEVIATIONS.md and PITFALLS.md: which file owns a non-obvious fact, and when the explanation belongs beside the code instead",

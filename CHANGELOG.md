@@ -2,6 +2,10 @@
 
 This repository is read at whatever revision you have checked out, so its entries are dated rather than numbered
 
+## 2026-10-22
+
+- `mail` is listed: reaching IMAP and SMTP mailboxes through a service that holds the passwords and decides by per-mailbox and per-address permissions the agent cannot grant itself, with new mail pushed over IDLE
+
 ## 2026-10-20
 
 - `headless-gui` is listed: running, screenshotting and clicking through a GUI app in a private headless sway, so that nothing reaches the desktop the user works in
