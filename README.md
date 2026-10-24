@@ -31,7 +31,6 @@ A Claude Code marketplace is a list, not a container: every entry here points at
 | [ci](https://github.com/rokokol/ci-skill) | CI that stays green for the right reasons |
 | [close-session](https://github.com/rokokol/close-session-skill) | close a working session and leave nothing hanging |
 | [code-comments](https://github.com/rokokol/code-comments-skill) | what a comment in code says, and a checker that reads comments out of the syntax tree |
-| [companion](https://github.com/rokokol/companion-skill) | a template for an assistant persona and the dossiers behind it |
 | [contributing](https://github.com/rokokol/contributing-skill) | everything published under your GitHub identity, approved one payload at a time |
 | [create-readme](https://github.com/rokokol/create-readme-skill) | the house rules for a readme |
 | [headless-gui](https://github.com/rokokol/headless-gui-skill) | run and click through a GUI app without touching your screen |

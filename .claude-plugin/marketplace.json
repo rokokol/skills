@@ -61,15 +61,6 @@
       "keywords": ["comments", "code-review", "tree-sitter", "style"]
     },
     {
-      "name": "companion",
-      "source": { "source": "github", "repo": "rokokol/companion-skill" },
-      "description": "A template for an assistant persona and the two dossiers behind it, kept out of the always-loaded instructions and rewritten for whoever adopts it",
-      "homepage": "https://github.com/rokokol/companion-skill",
-      "license": "MIT",
-      "category": "workflow",
-      "keywords": ["persona", "template", "assistant"]
-    },
-    {
       "name": "contributing",
       "source": { "source": "github", "repo": "rokokol/contributing-skill" },
       "description": "Everything published under your GitHub identity, and the homework before it: pushes, issues, pull requests, reviews and comments, each shown and approved one at a time",
